@@ -37,7 +37,12 @@
 <h4>本文</h4>
 <%= f.text_area :body %>
 
+
 <%= f.submit  'Create Books' %>
+<% end %>
+
+<% if @book.errors.any? %>
+   <p> can't be blank !!</p>
 <% end %>
 
 </body>
